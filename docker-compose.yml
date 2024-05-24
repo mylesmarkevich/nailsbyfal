@@ -1,0 +1,7 @@
+services:
+  web:
+    image: httpd:latest
+    ports:
+      - "8000:80"
+    volumes:
+      - ./docs:/usr/local/apache2/htdocs/
